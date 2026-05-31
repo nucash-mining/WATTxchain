@@ -314,8 +314,8 @@ public:
 
         vFixedSeeds.clear();
         vSeeds.clear();
-        // WATTx testnet - isolated mode (no external seeds for now)
-        // When ready for public testnet, add: vSeeds.emplace_back("testnet-seed1.wattxchange.app");
+        // WATTx Testnet v0.1.0 seednode — hardcoded bootstrap peer
+        vSeeds.emplace_back("76.131.208.215");
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,120);
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1,110);
